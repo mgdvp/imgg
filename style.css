@@ -1,0 +1,103 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Heebo', Segoe UI, sans-serif;
+	background-color: #181820;
+	color: #eee;
+}
+
+#app{
+	width: 95%;
+	max-width: 960px;
+	margin: 1rem auto;
+}
+
+#search{
+	text-align: center;
+	margin-top: 2rem;
+}
+
+#search input{
+	font-family: inherit;
+	font-size: 16px;
+	padding: 10px 16px;
+	border-radius: 8px;
+	border: none;
+	background-color: #BACDDB;
+	outline: none;
+	width: 260px;
+}
+
+#search input:focus{
+	outline: 2px solid #BACDDBAA;
+}
+
+#images{
+	margin-top: 1rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+#images img{
+	width: 300px;
+	border-radius: 8px;
+}
+
+#images .imgd{
+	margin: 10px;
+	border-radius: 8px;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+#images .imginf{
+	padding: 10px;
+	padding-top: 48px;
+}
+
+#images a{
+	display: block;
+	margin-top: -10rem;
+	color: inherit;
+	padding: 20px;
+	text-decoration: none;
+	text-align: center;
+	visibility: hidden;
+}
+
+#images a img{
+	width: 72px;
+	height: 72px;
+}
+
+#images a:hover{
+	visibility: visible;
+}
+
+#images img:hover ~ a{
+	visibility: visible;
+}
+
+#pagn{
+	margin-top: 1rem;
+	text-align: center;
+}
+
+button{
+	font-family: inherit;
+	font-size: 24px;
+	width: 40px;
+	border-radius: 8px;
+	border: none;
+	cursor: pointer;
+	margin-top: 8px;
+}
+
+button:hover{
+	opacity: 0.85;
+}
